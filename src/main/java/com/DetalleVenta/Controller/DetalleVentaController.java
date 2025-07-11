@@ -30,8 +30,8 @@ public class DetalleVentaController {
     }
 
     @PostMapping
-    public ResponseEntity<DetalleVentaDTO> create(@RequestBody DetalleVenta detalle) {
-        DetalleVentaDTO dto = service.save(detalle);
-        return ResponseEntity.status(HttpStatus.CREATED).body(dto);
+    public ResponseEntity<DetalleVenta> create(@RequestBody DetalleVenta detalle) {
+        DetalleVenta detalleGuardado = service.save(detalle);
+        return ResponseEntity.status(HttpStatus.CREATED).body(detalleGuardado);
     }
 }

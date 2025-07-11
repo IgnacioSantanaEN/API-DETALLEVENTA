@@ -17,9 +17,9 @@ public class DetalleVentaService {
         return toDTO(detalle);
     }
 
-    public DetalleVentaDTO save(DetalleVenta detalle) {
+    public DetalleVenta save(DetalleVenta detalle) {
         DetalleVenta saved = repository.save(detalle);
-        return toDTO(saved);
+        return saved;
     }
 
     private DetalleVentaDTO toDTO(DetalleVenta detalle) {
