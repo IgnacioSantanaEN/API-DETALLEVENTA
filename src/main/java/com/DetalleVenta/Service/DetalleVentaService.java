@@ -24,14 +24,13 @@ public class DetalleVentaService {
 
     private DetalleVentaDTO toDTO(DetalleVenta detalle) {
         if (detalle == null) return null;
-
         return new DetalleVentaDTO(
             detalle.getIdDetalle(),
             detalle.getIdVenta(),
             detalle.getIdProducto(),
             detalle.getCantidad(),
             detalle.getPrecioUnitario(),
-            "http://localhost:8089/api/detalleventa/" + detalle.getIdDetalle()
+            "http://localhost:8084/api/ventas/" + detalle.getIdDetalle()
         );
     }
 }
