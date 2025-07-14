@@ -30,7 +30,7 @@ public class DetalleVentaService {
             detalle.getIdProducto(),
             detalle.getCantidad(),
             detalle.getPrecioUnitario(),
-            "http://localhost:8084/api/ventas/" + detalle.getIdDetalle()
+            "http://localhost:8090/api/ventas/" + detalle.getIdVenta()
         );
     }
 }
